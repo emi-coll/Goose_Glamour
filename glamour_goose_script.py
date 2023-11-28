@@ -37,7 +37,7 @@ define d = Character("Game Creators")
 #for dialogue before level 1
     n "It’s almost the end of O Week at Watergoose. The last Frosh event is to earn \
     your hard hat by working with your friends to complete a series of challenges. \
-    Let’s put something on that’s {b}cute{/b} and {b}active{/b}!”
+    Let’s put something on that’s {b}cute{/b} and {b}active{/b}!"
     
     #if pass
     n "You’ve completed all the challenges and been awarded a hard hat! Good \
