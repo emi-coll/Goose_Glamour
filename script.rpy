@@ -40,6 +40,16 @@ default socksTights_3 = "a000"
 default shoes_3 = "a000"
 default coat_3 = "a000"
 
+#Variables for level 4
+default accessory_4 = "a000"
+default headwear_4 = "a000"
+default topDress_4 = "a000"
+default socksTights_4 = "a000"
+default shoes_4 = "a000"
+default coat_4 = "a000"
+
+#these are images that will be displayed later in the game
+image happy goose = im.Scale("goose_happy.PNG", 431, 1000)
 # The game starts here.
 
 label start:
@@ -214,7 +224,252 @@ label start:
             call screen startdress1
 
     label startlvl2:    
-        return
+        
+        scene wloo outside
 
+        hide goose_1
+
+        n "It’s time to relax after your midterms. Isn’t there a Noon Hour concert that\
+        features different musical theatre songs later today? Call your friends to join you and get\
+        dressed up in something {b}elegant{/b}!"
+
+        call screen startdress2
+
+    label doneLVL2:
+
+        hide screen startdress2
+        hide screen dress_ui2
+
+        hide screen goosebase
+
+        hide screen headwearNull
+        hide screen headwear1
+        hide screen headwear2
+        hide screen headwear3
+        hide screen headwears1
+
+        hide screen coatNull
+        hide screen coat1
+        hide screen coat2
+        hide screen coat3
+
+        hide screen topDressNull
+        hide screen topDress1
+        hide screen topDress2
+        hide screen topDress3
+
+        hide screen socksTightsNull
+        hide screen socksTights1
+        hide screen socksTights2
+        hide screen socksTights3
+
+        hide screen shoesNull
+        hide screen shoes1
+        hide screen shoes2
+        hide screen shoes3
+
+        hide screen accessoryNull
+        hide screen accessory1
+        hide screen accessory2
+        hide screen accessory3
+        hide screen accessorys1
+
+        scene opera
+        show goose_2 at center
+
+        $ statement2 = calculate_points(accessory_2, headwear_2, coat_2, topDress_2, socksTights_2, shoes_2)
+
+        n "Elegant Rank: [statement2[4]]"
+
+        if statement2[4]=="B" or statement2[4]=="A" or statement2[4]=="S":
+
+            n "You’re looking very classy for the concert! You’ve won an opera monocole."
+
+            jump startlvl3
+
+        else:
+
+            n "Oh no, your outfit doesn’t fit the concert dress code :( Hint: Try something more elegant."
+
+            $ accessory_2 = "a000"
+            $ headwear_2 = "a000"
+            $ topDress_2 = "a000"
+            $ socksTights_2 = "a000"
+            $ shoes_2 = "a000"
+            $ coat_2 = "a000"
+
+            hide goose_2
+
+            call screen startdress2
+
+    label startlvl3:
+
+        scene wloo outside
+        hide goose_2
+
+        n "It’s co-op application season… But the good thing is, you’ve secured an interview \
+        with Professor Pendar to discuss the possibilities of being one of her research assistants. \
+        To make a good impression, wear something {b}formal{/b} to the interview."
+
+        call screen startdress3
+
+    label doneLVL3:
+        
+        hide screen startdress3
+        hide screen dress_ui3
+
+        hide screen goosebase
+
+        hide screen headwearNull
+        hide screen headwear1
+        hide screen headwear2
+        hide screen headwear3
+        hide screen headwears1
+        hide screen headwears2
+
+        hide screen coatNull
+        hide screen coat1
+        hide screen coat2
+        hide screen coat3
+
+        hide screen topDressNull
+        hide screen topDress1
+        hide screen topDress2
+        hide screen topDress3
+
+        hide screen socksTightsNull
+        hide screen socksTights1
+        hide screen socksTights2
+        hide screen socksTights3
+
+        hide screen shoesNull
+        hide screen shoes1
+        hide screen shoes2
+        hide screen shoes3
+
+        hide screen accessoryNull
+        hide screen accessory1
+        hide screen accessory2
+        hide screen accessory3
+        hide screen accessorys1
+
+        scene wloo outside
+        show goose_3 at center
+
+        $ statement3 = calculate_points(accessory_3, headwear_3, coat_3, topDress_3, socksTights_3, shoes_3)
+
+        n "Formal Rank: [statement3[3]]"
+
+        if statement3[3]=="A" or statement3[3]=="S":
+
+            n "Good work! Professor Pendar seemed impressed with your appearance and interview skills.\
+            Hopefully you get the job! You’ve won a rubber duck to help you with coding."
+
+            if statement0[1] == "B" and statement1[1] == "B" and statement2[1] == "B" and statement3[1] == "B":
+                
+                hide goose_3
+                show happy goose at center
+
+                n "Yippee! You’ve unlocked the secret goth level :) You’re going on a goth date with \
+                your goose crush in an hour. Quick, put on your best {b}goth{/b} outfit to leave a mysterious \
+                and lingering impression!"
+
+                call screen startdress4
+
+            else: 
+                jump donegame
+
+        else:
+            n "Professor Pendar didn’t seem too impressed with what you wore… Hint: Try something more formal."
+
+            $ accessory_3 = "a000"
+            $ headwear_3 = "a000"
+            $ topDress_3 = "a000"
+            $ socksTights_3 = "a000"
+            $ shoes_3 = "a000"
+            $ coat_3 = "a000"
+
+            hide goose_3
+
+            call screen startdress3
+    
+    label doneLVL4:
+
+        hide screen startdress4
+        hide screen dress_ui4
+
+        hide screen goosebase
+
+        hide screen headwearNull
+        hide screen headwear1
+        hide screen headwear2
+        hide screen headwear3
+        hide screen headwears1
+        hide screen headwears2
+        hide screen headwears3
+
+        hide screen coatNull
+        hide screen coat1
+        hide screen coat2
+        hide screen coat3
+
+        hide screen topDressNull
+        hide screen topDress1
+        hide screen topDress2
+        hide screen topDress3
+
+        hide screen socksTightsNull
+        hide screen socksTights1
+        hide screen socksTights2
+        hide screen socksTights3
+
+        hide screen shoesNull
+        hide screen shoes1
+        hide screen shoes2
+        hide screen shoes3
+
+        hide screen accessoryNull
+        hide screen accessory1
+        hide screen accessory2
+        hide screen accessory3
+        hide screen accessorys1
+
+        scene wloo outside
+        show goose_4 at center
+
+        $ statement4 = calculate_points(accessory_4, headwear_4, coat_4, topDress_4, socksTights_4, shoes_4)
+
+        n "Goth Rank: [statement4[1]]"
+
+        if statement4[1] == "A" or statement4[1] == "S":
+
+            n "You had such a great time you’re going out on another date again next week! What a \
+            happy goose couple!"
+
+            jump donegame
+
+        else: 
+
+            n "Because you didn’t fit the dress code of the date venue, you and your goose crush \
+            had to awkwardly leave and go somewhere else :( Hint: Try something more goth."
+
+            call screen startdress4
+
+    label donegame:
+        
+        hide goose_3
+        hide goose_4
+
+        scene wloo outside
+
+        show happy goose at center
+
+        n "What an eventful week it’s been! So much to do and learn now that you’re at the University \
+        of Watergoose. I wonder what outfit you’ll wear tomorrow?"
+    
+        d "Thank you so much for playing Goose Glamour! We hope you had lots of fun dressing up your \
+        goose persona :)"
+        
+        return
     # This ends the game.
 

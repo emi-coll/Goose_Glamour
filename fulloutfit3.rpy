@@ -1,7 +1,7 @@
 
 #this code is responsible for displaying an outfit outside of the dressup minigame -E.C.
-layeredimage goose_1:
-#this layered image is for the outfit created in level 1
+layeredimage goose_3:
+#this layered image is for the outfit created in level 2
     zoom 0.25
 #This image is always apart of the layered image - E.C.
     always:
@@ -13,74 +13,78 @@ layeredimage goose_1:
     group socksTights:
         attribute 0 default:
             "null.PNG"
-    if socksTights_1 == "a000" :
+    if socksTights_3 == "a000" :
         "null.PNG"
-    elif socksTights_1 == "a442":
+    elif socksTights_3 == "a442":
         "socks1.PNG"
-    elif socksTights_1 == "a444":
+    elif socksTights_3 == "a444":
         "socks2.PNG"
-    elif socksTights_1 == "a443":
+    elif socksTights_3 == "a443":
         "socks3.PNG"
         
     group topDress:
         attribute 0 default:
             "null.PNG"
-    if topDress_1 == "a000":
+    if topDress_3 == "a000":
         "null.PNG"
-    elif topDress_1 == "a331":
+    elif topDress_3 == "a331":
         "top1.PNG"
-    elif topDress_1 == "a333":
+    elif topDress_3 == "a333":
         "top2.PNG"
-    elif topDress_1 == "a332":
+    elif topDress_3 == "a332":
         "top3.PNG"
 
     group coat:
         attribute 0 default:
             "null.PNG"
-    if coat_1 == "a000":
+    if coat_3 == "a000":
         "null.PNG"
-    elif coat_1 == "a221":
+    elif coat_3 == "a221":
         "coat1.PNG"
-    elif coat_1 == "a223":
+    elif coat_3 == "a223":
         "coat2.PNG"
-    elif coat_1 == "a222":
+    elif coat_3 == "a222":
         "coat3.PNG"
 
     group headwear:
         attribute 0 default:
             "null.PNG"
-    if headwear_1 == "a000":
+    if headwear_3 == "a000":
         "null.PNG"
-    elif headwear_1 == "a112":
+    elif headwear_3 == "a112":
         "headwear1.PNG"
-    elif headwear_1 == "a114":
+    elif headwear_3 == "a114":
         "headwear2.PNG"
-    elif headwear_1 == "a113":
+    elif headwear_3 == "a113":
         "headwear3.PNG"
+    elif headwear_3 == "a":
+        "headwears1.PNG"
+    elif headwear_3 == "a1":
+        "headwears2.PNG"
     
     group accessory:
         attribute 0 default:
             "null.PNG"
-    if accessory_1 == "a000":
+    if accessory_3 == "a000":
         "null.PNG"
-    elif accessory_1 == "a902":
+    elif accessory_3 == "a902":
         "accessory1.PNG"
-    elif accessory_1 == "a904":
+    elif accessory_3 == "a904":
         "accessory2.PNG"
-    elif accessory_1 == "a903":
+    elif accessory_3 == "a903":
         "accessory3.PNG"
-    elif accessory_1 == "a":
+    elif accessory_3 == "a":
         "accessorys1.PNG"
     
     group shoes:
         attribute 0 default:
             "null.PNG"
-    if shoes_1 == "a000":
+    if shoes_3 == "a000":
         "null.PNG"
-    elif shoes_1 == "a549":
+    elif shoes_3 == "a549":
         "shoes1.PNG"
-    elif shoes_1 == "a551":
+    elif shoes_3 == "a551":
         "shoes2.PNG"
-    elif shoes_1 == "a550":
+    elif shoes_3 == "a550":
         "shoes3.PNG"
         

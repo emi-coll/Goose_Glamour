@@ -14,6 +14,11 @@ init python:
 
     a000 = [0,0,0,0,0,0]
 
+    #EC: placeholders
+    a = [0,0,0,0,0,0]
+    a1 = [0,0,0,0,0,0]
+    a2 = [0,0,0,0,0,0]
+
     # JA: Choice of Accessories
 
     a902 = [1,-2,2,1,0,2]
@@ -55,13 +60,13 @@ init python:
     # JA: point values for each category
 
     itemlist1 = [a000, a902, a903, a904, a112, a113, a114, a115, a221, a222, a223, a331,
-            a332, a333, a442, a443, a444, a549, a550, a551]
+            a332, a333, a442, a443, a444, a549, a550, a551, a, a1, a2]
 
     # JA: The following itemlist includes all of the names for each item in the game
 
     itemlist2 = ["a000","a902", "a903", "a904", "a112", "a113", "a114", "a115", "a221",
                 "a222", "a223", "a331","a332", "a333", "a442", "a443",
-                "a444", "a549", "a550", "a551"]
+                "a444", "a549", "a550", "a551", "a", "a1", "a2"]
 
     def points(Accessories, Headwear, Coats, TopsDresses, SocksTights, Shoes):
         
