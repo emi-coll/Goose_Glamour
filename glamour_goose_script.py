@@ -18,7 +18,7 @@ define d = Character("Game Creators")
     
 #for dialogue before level 0    
     t "Click on the clothing item to put it on. If you want to take it off, click on\
-    the empty box.”
+    the empty box."
     
     t "Each clothing item has different tags that correspond to the different\
     categories of clothes: {i}Cute, Elegant, Goth, Formal, Casual, and Active{/i}. For\
