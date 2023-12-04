@@ -15,15 +15,21 @@ init python:
     a000 = [0,0,0,0,0,0]
 
     #EC: placeholders
+    a910 = [0,0,0,0,0,0]
+    #greendot - JA
     a = [0,0,0,0,0,0]
+    #hardhat - JA
     a1 = [0,0,0,0,0,0]
+    #opera monocole - JA
     a2 = [0,0,0,0,0,0]
+    #rubberduck - JA
 
     # JA: Choice of Accessories
 
     a902 = [1,-2,2,1,0,2]
     a903 = [2,3,0,-2,-1,-2]
     a904 = [0,0,1,3,1,0]
+    a905 = [0,0,0,0,0,0]
 
     # JA: Choice of Headwear
 
@@ -31,42 +37,48 @@ init python:
     a113 = [2,3,0,-2,-2,-2]
     a114 = [1,0,2,3,1,0]
     a115 = [3,1,2,0,0,0]
+    a116 = [0,0,0,0,0,0]
 
     # JA: Choice of Coats
 
-    a221 = [3,-3,5,0,-2,4]
+    a221 = [3,-3,5,0,-2,5]
     a222 = [3,5,0,-2,2,-1]
     a223 = [1,0,-1,5,2,-1]
+    a224 = [0,0,0,0,0,0]
 
     # JA: Choice of TopsDresses
 
-    a331 = [3,-5,5,1,-1,4]
+    a331 = [3,-5,5,1,-1,5]
     a332 = [2,5,-2,-2,2,-5]
     a333 = [1,0,1,5,3,0]
+    a334 = [0,0,0,0,0,0]
 
     # JA: Choice of Socks/Tights
 
-    a442 = [2,1,3,0,-1,2]
+    a442 = [2,1,3,0,-1,4]
     a443 = [2,4,1,-2,0,-2]
     a444 = [1,0,2,3,1,0]
+    a445 = [0,0,0,0,0,0]
 
     # JA: Choice of Shoes
 
     a549 = [3,-2,4,0,-1,2]
-    a550 = [3,4,-1,1,2,-2]
+    a550 = [3,4,-1,1,2,0]
     a551 = [1,2,2,4,3,-1]
+    a552 = [0,0,0,0,0,0]
 
     # JA: The following itemlist includes all of the items in the game with their 
     # JA: point values for each category
 
-    itemlist1 = [a000, a902, a903, a904, a112, a113, a114, a115, a221, a222, a223, a331,
-            a332, a333, a442, a443, a444, a549, a550, a551, a, a1, a2]
+    itemlist1 = [a000, a902, a903, a904, a905, a910, a112, a113, a114, a115, a116, a221, 
+                a222, a223, a224, a331, a332, a333, a334, a442, a443, a444, a445, 
+                a549, a550, a551, a552, a, a1, a2]
 
     # JA: The following itemlist includes all of the names for each item in the game
 
-    itemlist2 = ["a000","a902", "a903", "a904", "a112", "a113", "a114", "a115", "a221",
-                "a222", "a223", "a331","a332", "a333", "a442", "a443",
-                "a444", "a549", "a550", "a551", "a", "a1", "a2"]
+    itemlist2 = ["a000","a902", "a903", "a904", "a905", "a910", "a112", "a113", "a114", "a115", "a116", "a221",
+                "a222", "a223", "a224", "a331","a332", "a333", "a334", "a442", "a443",
+                "a444", "a445", "a549", "a550", "a551", "a552", "a", "a1", "a2"]
 
     def points(Accessories, Headwear, Coats, TopsDresses, SocksTights, Shoes):
         
