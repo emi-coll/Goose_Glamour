@@ -15,14 +15,16 @@ init python:
     a000 = [0,0,0,0,0,0]
 
     #EC: placeholders
-    a910 = [0,0,0,0,0,0]
+
     #greendot - JA
-    a = [0,0,0,0,0,0]
+    a910 = [3,3,3,3,3,3]
     #hardhat - JA
-    a1 = [0,0,0,0,0,0]
+    a = [1,-1,2,0,0,7]
     #opera monocole - JA
-    a2 = [0,0,0,0,0,0]
+    a1 = [1,1,0,2,5,0]
     #rubberduck - JA
+    a2 = [1,0,3,-1,0,1]
+    
 
     # JA: Choice of Accessories
 
