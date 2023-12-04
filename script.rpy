@@ -65,7 +65,6 @@ label start:
     #this dialgoue is instructions on how to actually select clothing items to create their outfits - E.L
     t "Click on the clothing item to put it on. If you want to take it off, click on\
     the empty box."
-   
     #this dialogue informs the player about the category system and reminds them to keep each level's theme in mind for their outfit - E.L
     t "Each clothing item has different tags that correspond to the different\
     categories of clothes: {i}Cute, Elegant, Goth, Formal, Casual, and Active{/i}." 
