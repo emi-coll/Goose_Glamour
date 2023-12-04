@@ -25,47 +25,66 @@ init python:
     #rubberduck - JA
 
     # JA: Choice of Accessories
-
+    #waterloo lanyard - JA
     a902 = [1,-2,2,1,0,2]
+    #choker - JA
     a903 = [2,3,0,-2,-1,-2]
+    #business watch - JA
     a904 = [0,0,1,3,1,0]
-    a905 = [0,0,0,0,0,0]
+    #purse - JA
+    a905 = [1,2,0,0,4,-2]
 
     # JA: Choice of Headwear
-
+    #goose plush - JA
     a112 = [3,0,3,-1,-1,0]
+    #batwing headband - JA
     a113 = [2,3,0,-2,-2,-2]
+    #business glasses - JA
     a114 = [1,0,2,3,1,0]
+    #cute glasses - JA
     a115 = [3,1,2,0,0,0]
-    a116 = [0,0,0,0,0,0]
+    #ear rings - JA
+    a116 = [1,2,0,1,2,-1]
 
     # JA: Choice of Coats
-
+    #waterloo varsity jacket - JA
     a221 = [3,-3,5,0,-2,5]
+    #bolera - JA
     a222 = [3,5,0,-2,2,-1]
+    #blazer - JA
     a223 = [1,0,-1,5,2,-1]
-    a224 = [0,0,0,0,0,0]
+    #boa - JA
+    a224 = [1,0,-2,2,5,-3]
 
     # JA: Choice of TopsDresses
-
+    #spirit shirt - JA
     a331 = [3,-5,5,1,-1,5]
+    #corset/harness - JA
     a332 = [2,5,-2,-2,2,-5]
+    #dress shirt - JA
     a333 = [1,0,1,5,3,0]
-    a334 = [0,0,0,0,0,0]
+    #ball gown - JA
+    a334 = [1,-1,-3,0,5,-4]
 
     # JA: Choice of Socks/Tights
-
+    #long yellow/black socks - JA
     a442 = [2,1,3,0,-1,4]
+    #fishnets - JA
     a443 = [2,4,1,-2,0,-2]
+    #professional socks - JA
     a444 = [1,0,2,3,1,0]
-    a445 = [0,0,0,0,0,0]
+    #elegant socks - JA
+    a445 = [1,1,-1,1,3,-1]
 
     # JA: Choice of Shoes
-
+    #waterloo slides - JA
     a549 = [3,-2,4,0,-1,2]
+    #platform boots - JA
     a550 = [3,4,-1,1,2,0]
+    #business shoes - JA
     a551 = [1,2,2,4,3,-1]
-    a552 = [0,0,0,0,0,0]
+    #elegant shoes - JA
+    a552 = [1,2,-2,1,3,-2]
 
     # JA: The following itemlist includes all of the items in the game with their 
     # JA: point values for each category
