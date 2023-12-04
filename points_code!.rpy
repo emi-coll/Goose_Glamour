@@ -25,6 +25,7 @@ init python:
     #rubberduck - JA
 
     # JA: Choice of Accessories
+
     #waterloo lanyard - JA
     a902 = [1,-2,2,1,0,2]
     #choker - JA
@@ -35,6 +36,7 @@ init python:
     a905 = [1,2,0,0,4,-2]
 
     # JA: Choice of Headwear
+
     #goose plush - JA
     a112 = [3,0,3,-1,-1,0]
     #batwing headband - JA
@@ -47,6 +49,7 @@ init python:
     a116 = [1,2,0,1,2,-1]
 
     # JA: Choice of Coats
+
     #waterloo varsity jacket - JA
     a221 = [3,-3,5,0,-2,5]
     #bolera - JA
@@ -57,6 +60,7 @@ init python:
     a224 = [1,0,-2,2,5,-3]
 
     # JA: Choice of TopsDresses
+
     #spirit shirt - JA
     a331 = [3,-5,5,1,-1,5]
     #corset/harness - JA
@@ -67,6 +71,7 @@ init python:
     a334 = [1,-1,-3,0,5,-4]
 
     # JA: Choice of Socks/Tights
+
     #long yellow/black socks - JA
     a442 = [2,1,3,0,-1,4]
     #fishnets - JA
@@ -77,6 +82,7 @@ init python:
     a445 = [1,1,-1,1,3,-1]
 
     # JA: Choice of Shoes
+
     #waterloo slides - JA
     a549 = [3,-2,4,0,-1,2]
     #platform boots - JA
