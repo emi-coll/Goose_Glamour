@@ -55,16 +55,18 @@ image happy goose = im.Scale("goose_happy.PNG", 431, 1000)
 label start:
    
     scene temp backgroundd 
-
+     
+    #this dialogue is for the tutorial level/level 0 and sets up the context of the game for the player - E.L
     t "Welcome to Glamour Goose! You are a student at the University of Watergoose\
     and every day is another chance to show off your fashion skills."
     
     t "By choosing an outfit that fits each scenario’s theme, you can win special items and move\
     onto the next level! Maybe you’ll even unlock a hidden level ;)"
-    
+    #this dialgoue is instructions on how to actually select clothing items to create their outfits - E.L
     t "Click on the clothing item to put it on. If you want to take it off, click on\
     the empty box."
-
+   
+    #this dialogue informs the player about the category system and reminds them to keep each level's theme in mind for their outfit - E.L
     t "Each clothing item has different tags that correspond to the different\
     categories of clothes: {i}Cute, Elegant, Goth, Formal, Casual, and Active{/i}." 
     
@@ -73,6 +75,7 @@ label start:
 
     scene wloo outside
 
+    #this is the dialogue for the first level of the game dictated by the narrator instead of the tutorial - E.L
     n "It’s your first day at Watergoose! The first thing on your schedule is a CHE\
     120 lecture with Professor Pendar. Why don’t you put something {b}casual{/b} on?"
     
@@ -124,7 +127,7 @@ label start:
         n "Casual Rank: [statement0[2]]"
 
         if statement0[2] == "B" or statement0[2]== "A" or statement0[2]=="S":
-            
+            #these dialgoue statements tell the player if they've passed or failed the level - E.L
             n "Congrats! Pendar loved your outfit :) You’ve won a green dot accessory."
 
             jump startlvl1
@@ -147,7 +150,7 @@ label start:
     label startlvl1:
 
         hide goose_0
-
+        #this is the dialogue for the second level of the game - E.L
         n "It’s almost the end of O Week at Watergoose. The last Frosh event is to earn \
         your hard hat by working with your friends to complete a series of challenges. \
         Let’s put something on that’s {b}cute{/b} and {b}active{/b}!"
@@ -201,7 +204,7 @@ label start:
         n "Cute Rank: [statement1[0]], Active Rank: [statement1[5]]"
 
         if (statement1[0] == "B" or statement0[0]== "A" or statement0[0]=="S") and (statement1[5]== "A" or statement1[5]== "S"):
-            
+            #these dialgoue statements tell the player if they've passed or failed the level and what item they've won by passing - E.L
             n "You’ve completed all the challenges and been awarded a hard hat! Good \
             luck on your journey to becoming an engigoose!"
             
@@ -228,7 +231,7 @@ label start:
         scene wloo outside
 
         hide goose_1
-
+        #this is the dialogue for the third level of the game - E.L
         n "It’s time to relax after your midterms. Isn’t there a Noon Hour concert that\
         features different musical theatre songs later today? Call your friends to join you and get\
         dressed up in something {b}elegant{/b}!"
@@ -282,7 +285,7 @@ label start:
         n "Elegant Rank: [statement2[4]]"
 
         if statement2[4]=="B" or statement2[4]=="A" or statement2[4]=="S":
-
+            #these dialgoue statements tell the player if they've passed or failed the level and what item they've won by passing- E.L
             n "You’re looking very classy for the concert! You’ve won an opera monocole."
 
             jump startlvl3
@@ -306,7 +309,7 @@ label start:
 
         scene wloo outside
         hide goose_2
-
+        #this is the dialogue for the fourth level of the game - E.L
         n "It’s co-op application season… But the good thing is, you’ve secured an interview \
         with Professor Pendar to discuss the possibilities of being one of her research assistants. \
         To make a good impression, wear something {b}formal{/b} to the interview."
@@ -361,7 +364,7 @@ label start:
         n "Formal Rank: [statement3[3]]"
 
         if statement3[3]=="A" or statement3[3]=="S":
-
+            #these dialgoue statements tell the player if they've passed or failed the level and the item they've won by passing - E.L
             n "Good work! Professor Pendar seemed impressed with your appearance and interview skills.\
             Hopefully you get the job! You’ve won a rubber duck to help you with coding."
 
@@ -369,7 +372,7 @@ label start:
                 
                 hide goose_3
                 show happy goose at center
-
+                #this dialogue tells the player they've unlocked the secret goth date level and have an additional level to complete - E.L
                 n "Yippee! You’ve unlocked the secret goth level :) You’re going on a goth date with \
                 your goose crush in an hour. Quick, put on your best {b}goth{/b} outfit to leave a mysterious \
                 and lingering impression!"
@@ -442,7 +445,7 @@ label start:
         n "Goth Rank: [statement4[1]]"
 
         if statement4[1] == "A" or statement4[1] == "S":
-
+            #these dialgoue statements tell the player if they've passed or failed the secret final level - E.L
             n "You had such a great time you’re going out on another date again next week! What a \
             happy goose couple!"
 
@@ -463,10 +466,10 @@ label start:
         scene wloo outside
 
         show happy goose at center
-
+        #this dialogue tells the player the game is over - E.L
         n "What an eventful week it’s been! So much to do and learn now that you’re at the University \
         of Watergoose. I wonder what outfit you’ll wear tomorrow?"
-    
+        #this dialogue is just a thank you to the player from us for playing the game :) - E.L
         d "Thank you so much for playing Goose Glamour! We hope you had lots of fun dressing up your \
         goose persona :)"
         
