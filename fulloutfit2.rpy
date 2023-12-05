@@ -1,7 +1,7 @@
 
 #this code is responsible for displaying an outfit outside of the dressup minigame -E.C.
-layeredimage goose_1:
-#this layered image is for the outfit created in level 1
+layeredimage goose_2:
+#this layered image is for the outfit created in level 2
     zoom 0.25
 #This image is always apart of the layered image - E.C.
     always:
@@ -9,7 +9,6 @@ layeredimage goose_1:
 #Grouping these images together prevents multiple of them being displayed at a time - E.C.
 #the if statements are used in refrence to the wearable variables defined in the script file -E.C.
 #Depending on what the value of the variable, the layered image displays a different item - E.C.
-#These variable values can be traced back to the dressup client and the points code - EC
 #These groups are in the order they are applied to the image instead of using a zorder statement - E.C.       
     
     group socksTights:
@@ -87,6 +86,9 @@ layeredimage goose_1:
     #earrings - EC
     elif headwear_5 == "a116":
         "headwear4.PNG"
+    #hardhat - EC
+    elif headwear_5 == "a":
+        "headwears1.PNG"
 
     group accessory:
         attribute 0 default:
