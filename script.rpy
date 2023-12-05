@@ -255,7 +255,15 @@ label start:
         #this calculates the rank of the outfit - EC
         n "Cute Rank: [statement1[0]], Active Rank: [statement1[5]]"
         #Prints the 1st and last entry of statement1, which corresponds to Cute and Active Rank as stated in the points_code file - EC
-        if (statement1[0] == "B" or statement0[0]== "A" or statement0[0]=="S") and (statement1[5]== "B" or statement1[5]== "S" or statement1[5]=="A"):
+        if statement1[0]=="C" or statement1[0]=="D" or statement1[0]=="F":
+            jump faillvl1
+            #goes to fail lvl1 - EC
+
+        elif statement1[5]=="C" or statement1[5]=="D" or statement1[5]=="F":
+            jump faillvl1
+            #goes to fail lvl1 - EC
+       
+        else:
             #at least a B in both Cute and Active is needed to pass this level - EC
             
             #these dialgoue statements tell the player if they've passed or failed the level and what item they've won by passing - E.L
@@ -265,8 +273,7 @@ label start:
             jump startlvl2
             #goes to the next level - EC
 
-        else:
-
+    label faillvl1:
             n "Unfortunately, you weren’t able to complete all the challenges because \
             you were hindered by your outfit. Hint: Try something more active and/or cute."
 
