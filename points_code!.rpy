@@ -23,7 +23,7 @@ init python:
     #hardhat - JA
     a = [1,-1,2,0,0,7]
     #opera monocole - JA
-    a1 = [1,1,0,3,5,0]
+    a1 = [1,2,0,5,5,0]
     #rubberduck - JA
     a2 = [6,0,3,-1,0,1]
     #sanrio hat - JA
@@ -80,7 +80,7 @@ init python:
     #long yellow/black socks - JA
     a442 = [2,1,3,0,-1,4]
     #fishnets - JA
-    a443 = [2,4,1,-2,0,-2]
+    a443 = [2,8,1,-2,0,-2]
     #professional socks - JA
     a444 = [1,0,2,3,1,0]
     #elegant socks - JA

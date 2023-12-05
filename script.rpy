@@ -472,7 +472,19 @@ label start:
             n "Good work! Professor Pendar seemed impressed with your appearance and interview skills.\
             Hopefully you get the job! You’ve won a rubber duck to help you with coding."
 
-            if (statement0[1] == "C" and statement1[1] == "C" and statement2[1] == "C" and statement3[1] == "C") or (statement0[1] == "B" and statement1[1] == "B" and statement2[1] == "B" and statement3[1] == "B") or (statement0[1] == "A" and statement1[1] == "A" and statement2[1] == "A" and statement3[1] == "A") or (statement0[1] == "S" and statement1[1] == "S" and statement2[1] == "S" and statement3[1] == "S"):
+            if statement0[1] == "D" or statement0[1] == "F":
+                jump freedress
+                #if the player did not unlock the secret level, the move on to the final level - EC
+            elif statement1[1] == "D" or statement1[1] == "F":
+                jump freedress 
+                #if the player did not unlock the secret level, the move on to the final level - EC
+            elif statement2[1] == "D" or statement2[1] == "F":
+                jump freedress
+                #if the player did not unlock the secret level, the move on to the final level - EC
+            elif statement3[1] == "D" or statement3[1] == "F":
+                jump freedress
+                #if the player did not unlock the secret level, the move on to the final level - EC
+            else:
                 #if the player has acheived at least a C rank in Goth for all previous levels they unlock a secret level - EC
                 scene wloo outside with Dissolve(2)
                 #shows background in 2 secs - EC
@@ -488,10 +500,6 @@ label start:
 
                 call screen startdress4
                 #starts secret 4th level - EC
-
-            else: 
-                jump freedress
-            #if the player did not unlock the secret level, the move on to the final level - EC
 
         else:
             n "Professor Pendar didn’t seem too impressed with what you wore… Hint: Try something more formal."
