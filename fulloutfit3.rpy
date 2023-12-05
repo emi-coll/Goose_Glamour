@@ -15,122 +15,122 @@ layeredimage goose_3:
         attribute 0 default:
             "null.PNG"
     #blank image - EC
-    if socksTights_5 == "a000" :
+    if socksTights_3 == "a000" :
         "null.PNG"
     #yellow/black striped socks - EC    
-    elif socksTights_5 == "a442":
+    elif socksTights_3 == "a442":
         "socks1.PNG"
     #buisness socks - EC
-    elif socksTights_5 == "a444":
+    elif socksTights_3 == "a444":
         "socks2.PNG"
     #fishnets - EC
-    elif socksTights_5 == "a443":
+    elif socksTights_3 == "a443":
         "socks3.PNG"
     #elegant socks - EC
-    elif socksTights_5 == "a445":
+    elif socksTights_3 == "a445":
         "socks4.PNG"
         
     group topDress:
         attribute 0 default:
             "null.PNG"
     #blank item - EC
-    if topDress_5 == "a000":
+    if topDress_3 == "a000":
         "null.PNG" 
     #yellow wloo shirt - EC
-    elif topDress_5 == "a331":
+    elif topDress_3 == "a331":
         "top1.PNG"
     #buisness shirt - EC
-    elif topDress_5 == "a333":
+    elif topDress_3 == "a333":
         "top2.PNG"
     #goth corset - EC
-    elif topDress_5 == "a332":
+    elif topDress_3 == "a332":
         "top3.PNG" 
     #elegant dress - EC
-    elif topDress_5 == "a334":
+    elif topDress_3 == "a334":
         "top4.PNG"
 
     group coat:
         attribute 0 default:
             "null.PNG"
     #blank item - EC
-    if coat_5 == "a000":
+    if coat_3 == "a000":
         "null.PNG"
     #varsity jacket - EC
-    elif coat_5 == "a221":
+    elif coat_3 == "a221":
         "coat1.PNG"
     #blazer - EC
-    elif coat_5 == "a223":
+    elif coat_3 == "a223":
         "coat2.PNG"
     #bolero - EC
-    elif coat_5 == "a222":
+    elif coat_3 == "a222":
         "coat3.PNG"
     #boa - EC
-    elif coat_5 == "a224":
+    elif coat_3 == "a224":
         "coat4.PNG"
 
     group headwear:
         attribute 0 default:
             "null.PNG"
     #blank item - EC
-    if headwear_5 == "a000":
+    if headwear_3 == "a000":
         "null.PNG"
     #goose plush - EC
-    elif headwear_5 == "a112":
+    elif headwear_3 == "a112":
         "headwear1.PNG"
     #buisness glasses - EC
-    elif headwear_5 == "a114":
+    elif headwear_3 == "a114":
         "headwear2.PNG"
     #batwing headband - EC
-    elif headwear_5 == "a113":
+    elif headwear_3 == "a113":
         "headwear3.PNG"
     #earrings - EC
-    elif headwear_5 == "a116":
+    elif headwear_3 == "a116":
         "headwear4.PNG"
     #hardhat - EC
-    elif headwear_5 == "a":
+    elif headwear_3 == "a":
         "headwears1.PNG"
     #opera monocole - EC
-    elif headwear_5 == "a1":
+    elif headwear_3 == "a1":
         "headwears2.PNG"
 
     group accessory:
         attribute 0 default:
             "null.PNG"
     #blank item - EC
-    if accessory_5 == "a000":
+    if accessory_3 == "a000":
         "null.PNG"
     #lanyard - EC
-    elif accessory_5 == "a902":
+    elif accessory_3 == "a902":
         "accessory1.PNG"
     #buisness watch - EC
-    elif accessory_5 == "a904":
+    elif accessory_3 == "a904":
         "accessory2.PNG"
     #choker - EC
-    elif accessory_5 == "a903":
+    elif accessory_3 == "a903":
         "accessory3.PNG"
     #elegant purse - EC
-    elif accessory_5 == "a905":
+    elif accessory_3 == "a905":
         "accessory4.PNG"
     #green dot - EC
-    elif accessory_5 == "a910":
+    elif accessory_3 == "a910":
         "accessorys1.PNG"
     
     group shoes:
         attribute 0 default:
             "null.PNG"
     #blank item - EC
-    if shoes_5 == "a000":
+    if shoes_3 == "a000":
         "null.PNG"
     #slides - EC
-    elif shoes_5 == "a549":
+    elif shoes_3 == "a549":
         "shoes1.PNG"
     #buisness shoes - EC
-    elif shoes_5 == "a551":
+    elif shoes_3 == "a551":
         "shoes2.PNG"
     #platform boots - EC
-    elif shoes_5 == "a550":
+    elif shoes_3 == "a550":
         "shoes3.PNG"
     #elegant shoes - EC
-    elif shoes_5 == "a552":
+    elif shoes_3 == "a552":
         "shoes4.PNG" 
         
