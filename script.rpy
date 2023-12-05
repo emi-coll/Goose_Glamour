@@ -1,8 +1,10 @@
 ﻿# The script of the game goes in this file - EC
 
+#Initializing music - IC
+define audio.wario = "garlic jam (an album made in warioware d.i.y).mp3"
+
 # Declare characters used by this game. The color argument colorizes the
 # name of the character and the text they "say" - EC
-
 define t = Character("Tutorial", color = "#0d2a0f", what_color = "#37a33e")
 define n = Character("Narrator", color = "#d24dff")
 define d = Character("Game Creators", color = "#5500ff")
@@ -62,14 +64,17 @@ default coat_5 = "a000"
 #these are images that will be displayed later in the game - EC
 image happy goose = im.Scale("goose_happy.PNG", 431, 1000)
 image normal goose = im.Scale("defaultgoose.PNG", 432, 1000)
-image pendar look = im.Scale("pendarsee.PNG", 431, 1000)
-image pendar nolook = im.Scale("pendarblink.PNG", 431, 1000)
+image pendarsee = im.Scale("pendarsee.PNG", 500, 1000)
+image pendarblink = im.Scale("pendarblink.PNG", 500, 1000)
 
 #the following code runs the actual game - EC
 label start:
 #each label is a different scene in the progress of the game - EC
 #this label is shown after start is clicked from the start menu - EC 
     
+    play music audio.wario
+    #PLAY MUSIC LETS GOOOOOO - IC
+
     scene temp backgroundd
     #calling "scene" sets the background to the image that follows after - EC
 
@@ -472,6 +477,12 @@ label start:
             n "Good work! Professor Pendar seemed impressed with your appearance and interview skills.\
             Hopefully you get the job! You’ve won a rubber duck to help you with coding."
 
+            #recalculates points to check if goth level is unlocked - EC
+            $ statement0 = calculate_points(accessory_0, headwear_0, coat_0, topDress_0, socksTights_0, shoes_0)
+            $ statement1 = calculate_points(accessory_1, headwear_1, coat_1, topDress_1, socksTights_1, shoes_1)
+            $ statement2 = calculate_points(accessory_2, headwear_2, coat_2, topDress_2, socksTights_2, shoes_2)
+            $ statement3 = calculate_points(accessory_3, headwear_3, coat_3, topDress_3, socksTights_3, shoes_3)
+
             if statement0[1] == "D" or statement0[1] == "F":
                 jump freedress
                 #if the player did not unlock the secret level, the move on to the final level - EC
@@ -759,6 +770,9 @@ label start:
         #it goes in terms of percentage of the screen, so 0.5 is in the middle, 0.0 is all the way on the left, 1.0 is all the way on the right - EC
 
         d "Stay glam!"
+
+        #Stops the music - IC
+        stop music fadeout 1.0
 
         return
 
