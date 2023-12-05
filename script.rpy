@@ -1,5 +1,11 @@
 ﻿# The script of the game goes in this file - EC
 
+#Commenting Key
+#EC - Emily Collicutt, Student ID: 21072498
+#IC - Isabelle Jiale Cai, Student ID: 21073007
+#EK - Emma Ka Wai Liu, Student ID: 21065138
+#JA - Jason Anandappa, Student ID: 21070211
+
 #Initializing music - IC
 define audio.wario = "garlic jam (an album made in warioware d.i.y).mp3"
 
